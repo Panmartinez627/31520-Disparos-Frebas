@@ -1,12 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
 public class Disparo : MonoBehaviour
 {
+    public GameObject prefab; 
+    public Transform posicionTorreta;
     // Start is called before the first frame update
     void Start()
     {
+        
         
     }
 
@@ -15,4 +17,9 @@ public class Disparo : MonoBehaviour
     {
         
     }
+
+    void crearBala()
+    {
+      Instantiate(prefab,posicionTorreta.position,transform.rotation);
+     }
 }
