@@ -8,8 +8,7 @@ public class Disparo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        
+         Instantiate(prefab,posicionTorreta.position,transform.rotation);
     }
 
     // Update is called once per frame
@@ -17,9 +16,4 @@ public class Disparo : MonoBehaviour
     {
         
     }
-
-    void crearBala()
-    {
-      Instantiate(prefab,posicionTorreta.position,transform.rotation);
-     }
 }
